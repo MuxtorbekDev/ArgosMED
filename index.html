@@ -73,14 +73,14 @@ input,input *{-webkit-user-select:text;user-select:text}
 img{-webkit-user-drag:none}
 #guard{position:fixed;inset:0;z-index:10000;background:var(--bg);display:none;align-items:center;justify-content:center;text-align:center;padding:20px;font-weight:600;color:var(--mut)}
 #guard.on{display:flex}
-@media print{body *{display:none!important}body::after{content:"Chop etish taqiqlangan · @SabohatBuriboyeva";display:block;padding:40px;font-size:20px}}
+@media print{body *{display:none!important}body::after{content:"Chop etish taqiqlangan · @Sinovuchun07";display:block;padding:40px;font-size:20px}}
 </style>
 </head>
 <body>
-<div id="wm"></div><div id="guard">Himoya: dasturchi vositalari yopilgach sahifa qayta ko‘rinadi.<br>@SabohatBuriboyeva</div>
+<div id="wm"></div><div id="guard">Himoya: dasturchi vositalari yopilgach sahifa qayta ko‘rinadi.<br>@Sinovuchun07</div>
 
 <div id="login"><div class="lcol">
-  <a class="tg" href="https://t.me/SabohatBuriboyeva" target="_blank" rel="noopener">Test bazasini sotib olish uchun Telegramdan bog‘laning:<br><b>@SabohatBuriboyeva</b></a>
+  <a class="tg" href="https://t.me/Sinovuchun07" target="_blank" rel="noopener">Test bazasini sotib olish uchun Telegramdan bog‘laning:<br><b>@Sinovuchun07</b></a>
   <form class="lbox" id="lform" autocomplete="off">
     <h1>ARGOS Tibbiyot Testi</h1>
     <p>Kirish uchun login va parolni kiriting</p>
@@ -158,7 +158,7 @@ const L="ABCDEFGH";
 function setWM(user){
   const dark=matchMedia("(prefers-color-scheme: dark)").matches,col=dark?"#9aa6b8":"#7a8597";
   const sub=user?`<text x="0" y="22" font-size="13" text-anchor="middle" fill="${col}" font-family="Arial">${esc(user)}</text>`:"";
-  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="300" height="190"><g transform="translate(150 95) rotate(-30)"><text x="0" y="0" font-size="20" font-weight="700" text-anchor="middle" fill="${col}" font-family="Arial">@SabohatBuriboyeva</text>${sub}</g></svg>`;
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="300" height="190"><g transform="translate(150 95) rotate(-30)"><text x="0" y="0" font-size="20" font-weight="700" text-anchor="middle" fill="${col}" font-family="Arial">@Sinovuchun07</text>${sub}</g></svg>`;
   $("wm").style.backgroundImage=`url("data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}")`;
 }
 setWM(store.get("argos_u")||"");
@@ -210,7 +210,7 @@ function render(sec,M,Q,demo){
       x.o.map((o,j)=>`<button class="opt" data-a="${x.a}" data-j="${j}">${L[j]}) ${esc(o)}</button>`).join("")+`</div>`});}
   if(Q.length){ if(M.length&&!demo) html+=`<div class="h3">Savol-javoblar</div>`; if(!demo)k=0;
     Q.forEach(x=>{k++;html+=`<div class="q" data-t="${esc(x.q.toLowerCase())}">${tag(x)}<div class="qt"><i>${k}.</i>${esc(x.q)}</div><button class="show">Javobni ko‘rish</button><div class="ans">Javob: ${esc(x.a)}</div></div>`});}
-  if(demo) html+=`<div class="cta">Demo tugadi. To‘liq test bazasi (6000+ savol, 20 ta yo‘nalish) uchun Telegramdan bog‘laning:<br><a href="https://t.me/SabohatBuriboyeva" target="_blank" rel="noopener">@SabohatBuriboyeva</a></div>`;
+  if(demo) html+=`<div class="cta">Demo tugadi. To‘liq test bazasi (6000+ savol, 20 ta yo‘nalish) uchun Telegramdan bog‘laning:<br><a href="https://t.me/Sinovuchun07" target="_blank" rel="noopener">@Sinovuchun07</a></div>`;
   $("list").innerHTML=html;stats();window.scrollTo(0,0);
 }
 $("list").addEventListener("click",e=>{
